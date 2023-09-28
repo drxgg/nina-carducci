@@ -367,10 +367,6 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-	.picture img {
-		width: 240px;
-		height: 240px;
-}
 }
 
 .img-fluid {
