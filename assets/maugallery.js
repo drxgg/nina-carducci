@@ -1,6 +1,5 @@
 // Définir une fonction jQuery personnalisée appelée mauGallery
 (function($) {
-    // Attacher la fonction mauGallery à l'objet prototype de jQuery
   $.fn.mauGallery = function(options) {
     // Étendre les options par défaut avec celles fournies par l'utilisateur
     var options = $.extend($.fn.mauGallery.defaults, options);
