@@ -215,7 +215,7 @@ h1 a {
 #contact .container {
   display: flex;
 }
-.picture.right::before {
+.picture_right::before {
   content: " ";
   background-color: #8b7309;
   width: 374px;
@@ -324,10 +324,10 @@ input[type="submit"] {
   #contact .container {
     flex-direction: column;
   }
-  #contact .picture.right {
+  #contact .picture_right {
     margin-top: 1em;
   }
-  .picture.right::before {
+  .picture_right::before {
     width: 100%;
     height: 30%;
     position: absolute;
@@ -353,7 +353,7 @@ input[type="submit"] {
     text-align: center;
   }
   .picture.left::before,
-  .picture.right::before {
+  .picture_right::before {
     height: 150px;
   }
   #services .container {

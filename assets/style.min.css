@@ -14,7 +14,7 @@
   font-family: Spectral;
 }
 .service,
-.top-header {
+.top_header {
   background-color: #fff;
 }
 #about,
@@ -22,9 +22,8 @@
   padding-inline: 100px;
   padding-block: 100px;
 }
-.picture.left::before,
-.picture.right::before {
-  content: " ";
+.picture_left::before,
+.picture_right::before {
   width: 374px;
   height: 329px;
   bottom: 0;
@@ -38,7 +37,7 @@ body {
   font-family: Inter;
   font-style: normal;
 }
-.top-header {
+.top_header {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -54,7 +53,7 @@ body {
 .item-column {
   position: relative;
 }
-.top-header .name {
+.top_header .name {
   font-size: 26px;
 }
 .nav ul {
@@ -71,7 +70,7 @@ h1 a {
   text-decoration: none;
   color: #000;
 }
-.social-link img {
+.social_link img {
   width: 20px;
   height: 20px;
 }
@@ -79,7 +78,8 @@ h1 a {
   display: flex;
   background-color: #f6d2b8;
 }
-.picture.left::before {
+.picture_left::before {
+  content: " ";
   background-color: #e5975f;
   position: absolute;
   left: 0;
@@ -216,7 +216,8 @@ form textarea {
   margin: auto;
   background-color: #d8d3a8;
 }
-.picture.right::before {
+.picture_right::before {
+  content: " ";
   background-color: #8b7309;
   position: absolute;
   right: 0;
@@ -260,8 +261,8 @@ input[type="submit"] {
   }
 }
 @media all and (max-width: 1000px) {
-  .picture.left::before,
-  .picture.right::before {
+  .picture_left::before,
+  .picture_right::before {
     height: 30%;
     position: absolute;
     z-index: -1;
@@ -275,7 +276,7 @@ input[type="submit"] {
   .picture {
     width: 50%;
   }
-  .picture.left::before {
+  .picture_left::before {
     bottom: auto;
     top: 0;
     left: 0;
@@ -301,31 +302,31 @@ input[type="submit"] {
     left: auto;
     z-index: 0;
   }
-  #contact .picture.right {
+  #contact .picture_right {
     margin-top: 1em;
   }
-  .picture.right::before {
+  .picture_right::before {
     bottom: 0;
     right: 0;
   }
 }
 @media all and (max-width: 650px) {
-  .top-header {
+  .top_header {
     flex-direction: column;
     padding-inline: 0;
   }
-  .top-header .nav,
-  .top-header .nav ul {
+  .top_header .nav,
+  .top_header .nav ul {
     width: 100%;
     padding: 0;
   }
-  .top-header .nav li {
+  .top_header .nav li {
     flex: 1;
     padding-block: 1em;
     text-align: center;
   }
-  .picture.left::before,
-  .picture.right::before {
+  .picture_left::before,
+  .picture_right::before {
     height: 150px;
   }
   #services .container {
